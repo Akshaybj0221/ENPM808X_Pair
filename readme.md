@@ -1,6 +1,6 @@
 # C++ Boilerplate
 [![Build Status](https://travis-ci.org/Akshaybj0221/ENPM808X_Pair.svg?branch=master)](https://travis-ci.org/Akshaybj0221/ENPM808X_Pair)
-[![Coverage Status](https://coveralls.io/repos/github/dpiet/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/dpiet/cpp-boilerplate?branch=master)
+[![Coverage Status](https://coveralls.io/repos/github/Akshaybj0221/cpp-boilerplate/badge.svg?branch=master)](https://coveralls.io/github/Akshaybj0221/cpp-boilerplate?branch=master)
 ---
 
 ## Overview
