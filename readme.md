@@ -9,7 +9,7 @@ Basic pid controller demonstration.
 
 ## Standard install via command-line
 ```
-git clone --recursive https://github.com/dpiet/cpp-boilerplate
+git clone --recursive https://github.com/Akshaybj0221/ENPM808X_Pair.git
 cd <path to repository>
 mkdir build
 cd build
