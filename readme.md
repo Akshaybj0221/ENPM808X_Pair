@@ -5,10 +5,7 @@
 
 ## Overview
 
-Simple starter C++ project with:
-
-- cmake
-- googletest
+Basic pid controller demonstration.
 
 ## Standard install via command-line
 ```
