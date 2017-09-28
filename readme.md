@@ -121,3 +121,6 @@ perspetive view (or Windows->Perspective->Open Perspective->C/C++).
 - Git
 
     It is possible to manage version control through Eclipse and the git plugin, but it typically requires creating another project. If you're interested in this, try it out yourself and contact me on Canvas.
+    
+##
+I've implemented the PID control calculation and modify some syntax and changed some naming for variables and methods.
