@@ -13,26 +13,26 @@
 
 
 
-void pid::input_pid(float p, float d, float i) {
+void pid::inputPid(double p, double d, double i) {
 
 	kp = p;
 	kd = d;
 	ki = i;
 }
 
-int pid::pid_cal() {
+double pid::pidCal() {
 	return 10;
 }
 
-int pid::get_kp() {
+double pid::getKp() {
 	return 1;
 }
 
-int pid::get_kd() {
+double pid::getKd() {
 	return 1;
 }
 
-int pid::get_ki() {
+double pid::getKi() {
 	return 1;
 }
 
