@@ -1,18 +1,31 @@
-
-#include "gtest/gtest.h"
+#include <gtest/gtest.h>
 #include <pid.hpp>
 
-TEST(test, param) {
-	pid obj;
-	obj.input_pid(1, 1, 1);
-
-	ASSERT_EQ(obj.get_kp(), 1);
-	ASSERT_EQ(obj.get_kd(), 1);
-	ASSERT_EQ(obj.get_ki(), 1);
+TEST(dummy, should_pass) {
+	EXPECT_EQ(1, 1);
 }
 
-TEST(PIDresult, param) {
-	pid obj2;
+TEST(parameterTest, paramValue) {
+	pid obj;
+	obj.inputPid(1, 1, 1);
 
-	ASSERT_EQ(obj2.pid_cal(), 10);
+	ASSERT_EQ(obj.getKp(), 1);
+	ASSERT_EQ(obj.getKi(), 1);
+	ASSERT_EQ(obj.getKd(), 1);
+}
+
+TEST(testResult, param) {
+	pid obj;
+	obj.inputPid(0.05, 0.1, 0.02);
+	double targetV = 5.0;
+	double val = 4.5;
+	double time = 100;
+	double dt = 0.1;
+	for (int i = 0; i < time/dt; i++) {
+		val = obj.pidCal(targetV, val, dt);
+
+	    printf("val:% .4f\n", val);
+	}
+
+	ASSERT_TRUE(targetV-val < 0.001 ); //error less than 0.001
 }

@@ -10,14 +10,16 @@
 
 class pid {
 protected:
-	float kp, kd, ki;
-
+	double kp, kd, ki;
+	double prevError;
+	double integral;
+	double max,min;
 public:
-	void input_pid(float, float, float);
-	int pid_cal();
-	int get_kp();
-	int get_kd();
-	int get_ki();
+	void inputPid(double, double, double);
+	double pidCal(double, double, double);
+	double getKp();
+	double getKd();
+	double getKi();
 };
 
 
